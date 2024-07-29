@@ -1,0 +1,24 @@
+server:
+  port: 80
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Talaba_UZMU
+    username: postgres
+    password: 7004
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+    show-sql: true
+app:
+  sms:
+    expiredMinute: 1
+  jwt:
+    access:
+      key: 5i^$%fQIT7EmQ!86!7Pn16cQ3FMks7Dm
+      expiration: 3600000
+    refresh:
+      key: QvD7#22R6*&uT6WbWu9P2wDN!6^dNBFg
+      expiration: 172800000
